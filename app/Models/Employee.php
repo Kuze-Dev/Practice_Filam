@@ -12,9 +12,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Employee extends Model
 {
     protected $fillable = [
-        'name',
+        'first_name',
+        'last_name',
+        'middle_name',
+        'date_of_birth',
+        'date_hired',
         'email',
-        'phone',
+        'zip_code',
         'address',
         'country_id',
         'state_id',

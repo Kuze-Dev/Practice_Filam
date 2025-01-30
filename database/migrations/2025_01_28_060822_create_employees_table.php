@@ -24,6 +24,7 @@ return new class extends Migration
             $table->char('zip_code');
             $table->date('date_of_birth');
             $table->date('date_hired');
+            $table->string('profile_image')->nullable(); // New column for storing profile image path
             $table->timestamps();
         });
     }

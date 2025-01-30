@@ -63,18 +63,18 @@ class EmployeeResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('country_id')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('state_id')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('city_id')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('department_id')
-                    ->numeric()
-                    ->sortable(),
+                Tables\Columns\TextColumn::make('country.name')
+
+                     ->searchable(),
+                Tables\Columns\TextColumn::make('state.name')
+
+                     ->searchable(),
+                Tables\Columns\TextColumn::make('city.name')
+
+                     ->searchable(),
+                Tables\Columns\TextColumn::make('department.name')
+
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('first_name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('last_name')
